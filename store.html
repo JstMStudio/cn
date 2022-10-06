@@ -879,6 +879,63 @@ for (i = 0; i < coll.length; i++) {
           </div>
         </div>
   </div>
+          
+<div id="myNav4" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+  <div class="overlay-content">
+<h1>材料商店</h1>
+<p>Jst多功能工作室也有一个素材商店。 Jst多功能工作室在Jst多功能工作室材料商店上出售许多工作室开发的素材。 Jst多功能工作室材料商店为我们的客户和客户在他们的网站上使用成本边际生产高质量的材料。 Jst多功能工作室也在这里出售材料以资助一些工作室运营。 </p>
+<br>
+<hr>
+<br>
+<h2>材料</h2>
+<p>Jst多功能工作室目前以我们竞争对手的价格优势销售多种类型的网站材料。您可以查看下面列出的Jst多功能工作室出售的所有材料。</p>
+<br>
+<button type="button" class="collapsible">主题</button>
+<div class="content">
+<p>Jst多功能工作室为我们的客户和用户销售主题配置。 Jst多功能工作室Themes配置允许客户端用户将网页主题更改为他们喜欢的颜色。我们目前在此材料中提供 9 种配置。</p>
+<li style="text-align:left;">价格：$30</li>
+<li style="text-align:left;">交货时间：48 小时</li>
+<li style="text-align:left;"><a href="materials/themes.html">演示</a></li>
+<br>
+</div>
+<br><br>
+<button type="button" class="collapsible">动画颜色超链接按钮</button>
+<div class="content">
+  <p>Jst多功能工作室还出售一个超链接按钮，该按钮在悬停在按钮上时包含颜色变化和独特的动画。客户只需 20 美元即可将其添加到他们的网站超链接中。 </p>
+  <li style="text-align:left;">价格：$20</li>
+<li style="text-align:left;">交货时间：48 小时</li>
+<li style="text-align:left;"><a href="materials/animated-color-hyperlink-button.html">演示</a></li>
+<br>
+</div>
+<br><br>
+<button type="button" class="collapsible">带描述的搜索过滤器</button>
+<div class="content">
+  <p>Jst多功能工作室从包含整个列表中每个和所有项目的描述的项目列表中出售搜索过滤器。 Jst多功能工作室搜索过滤器仅搜索项目的名称或标题，使其更准确。只需 20 美元，您就可以将它放在您的网站上。</p>
+    <li style="text-align:left;">价格：$20</li>
+<li style="text-align:left;">交货时间：48 小时</li>
+<li style="text-align:left;"><a href="materials/search-filter-with-description.html">演示</a></li>
+<br>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </div>
+</div>
 
 <h1>商店</h1>
 <p>Jst 多功能工作室是一个位于马来西亚的小型团队。Jst 多功能工作室专注于从网站开发到撰写故事的许多方面。Jst 多功能工作室由一群对技术感兴趣的年轻朋友创立。</p>
@@ -908,6 +965,8 @@ for (i = 0; i < coll.length; i++) {
 <div style="font-size:30px;background-color:cyan;width:90%;text-align:center;color:purple;padding:10px;font-weight:粗体;border-style:solid;" onclick="openNav2()" id="store">商店</div>
 <br>
 <div style="font-size:30px;background-color:cyan;width:90%;text-align:center;color:purple;padding:10px;font-weight:粗体;border-style:solid;" onclick="openNav3()" id="website">网站</div>
+<br>
+<div style="font-size:30px;background-color:cyan;width:90%;text-align:center;color:purple;padding:10px;font-weight: bold;border-style: solid;" onclick="openNav4()" id="materialstore">材料商店</div>
 <br>
 <script>
 function openNav() {
@@ -940,6 +999,14 @@ function openNav3() {
 
 function closeNav3() {
   document.getElementById("myNav3").style.width = "0%";
+}
+
+function openNav4() {
+  document.getElementById("myNav4").style.width = "100%";
+}
+
+function closeNav4() {
+  document.getElementById("myNav4").style.width = "0%";
 }
 </script>
 <br><br>
