@@ -597,6 +597,20 @@ text-align: center;
   font-size: 15px;
   font-weight: bold;
 }
+
+.collapsible1 {
+  background-color: yellow;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .content1 {
   padding: 0 18px;
   display: none;
@@ -937,10 +951,10 @@ function myFunction12() {
 </div>
 
 <div id="Guilded" class="tabcontent">
-<h1>公会</h1>
+  <h1>Guilded</h1>
   <p>欢迎来到发现服务器的 Guilded 部分！一个探索和寻找大量 Guilded 机器人和社区服务器的地方。一个探索更多你从未听说过的社区的地方。 </p>
   <br>
-  <button type="button" class="collapsible">服务器</button>
+  <button type="button" class="collapsible1">服务器</button>
 <div class="content1">
 <p>我们将用户和服务器连接在一起，形成一个活跃的社区服务器。用户与他们喜欢或想要的利基服务器相遇的地方。</p><br>
 <input type="text" id="myInput3" onkeyup="myFunction13()" placeholder="搜索服务器名称.." title="输入名称" style="background-color:blue;color:orange; ">
@@ -962,7 +976,7 @@ function myFunction12() {
   <li><div><a href="#">Nonec</a>a</div></li>
 </ul>
 <script>
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible1");
 var i;
 
 for (i = 0; i < coll.length; i++) {
